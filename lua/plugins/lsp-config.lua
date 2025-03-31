@@ -9,7 +9,7 @@ return{
    "williamboman/mason-lspconfig.nvim",
   config = function()
     require("mason-lspconfig").setup({
-        ensure_installe = { "lua_ls", "clangd" }
+        ensure_installe = { "lua_ls"}
       })
     end
   },
@@ -27,7 +27,6 @@ lspconfig.lua_ls.setup({
     }
   }
 })
-      lspconfig.clangd.setup()
     end
   }
 }
